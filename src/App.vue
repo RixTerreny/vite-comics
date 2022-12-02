@@ -10,9 +10,12 @@ import Section1 from './components/Section1.vue';
 </script>
 
 <template>
-  <TheHeader></TheHeader>
-  <Jumbotron></Jumbotron>
-  <Section1></Section1>
+  <div class="d-flex flex-column height">
+    <TheHeader></TheHeader>
+    <Jumbotron class="flex-grow-1"></Jumbotron>
+    <Section1 ></Section1>
+    <TheFooter></TheFooter>
+  </div>
 </template>
 
 <style lang="scss">
@@ -32,5 +35,9 @@ import Section1 from './components/Section1.vue';
 
   img{
     width: 100%;
+  }
+
+  .height{
+    height: 100vh;
   }
 </style>
