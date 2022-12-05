@@ -17,6 +17,30 @@ export default{
                 "Videos",
                 "News"
             ],
+            shop:[
+                "Shop DC",
+                "Shop DC Collectibles",
+            ],
+            dc:[
+                "Terms Of Use",
+                "Privacy Policy (New)",
+                "Ad Choices",
+                "Advertising",
+                "Jobs",
+                "Subscriptions",
+                "Talent Workshops",
+                "CPSC Cerificates",
+                "Rating",
+                "Shop Help",
+                "Contact us"
+            ],
+            sites:[
+                "DC",
+                "MAD Magazines",
+                "DC Kids",
+                "DC Universe",
+                "Dc Power Visa"
+            ],
             
             img:[
                 "footer-facebook.png",
@@ -33,10 +57,32 @@ export default{
 <template>
     <div class="bg-img ">
         <div class="container  d-flex justify-content-between">
-            <div class="mt-5">
-                <div v-for="element in titleList">
-                    <h5 class="text-white">{{element}}</h5>
-                    <a v-for="element in dcComics" class="">{{element}}</a>
+            <div class="my-5 text-white row">
+                <div class="col-4">
+                    <div class="mb-3">
+                        <h5>DC COMICS</h5>
+                        <a v-for="element in dcComics" class="d-flex flex-column">{{element+" "}}</a>
+                    </div>
+
+                    <div class="mb-3">
+                        <h5>SHOP</h5>
+                        <a v-for="element in shop" class="d-flex flex-column">{{element+" "}}</a>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="mb-3">
+                        <h5>DC</h5>
+                        <a v-for="element in dc" class="d-flex flex-column">{{element+" "}}</a>
+                    </div>
+                </div>
+                
+
+                <div class="col-4">
+                    <div class="mb-3">
+                        <h5>SITES</h5>
+                        <a v-for="element in sites" class="d-flex flex-column">{{element+" "}}</a>
+                    </div>
                 </div>
             </div>
             <div class="dc-bg">
@@ -66,7 +112,7 @@ export default{
 
 .dc-bg{
     background-image: url(../assets/dc-logo-bg.png);
-    height: 350px;
+    height: 410px;
     width: 600px;
     background-repeat: no-repeat;
     background-position: 0 50% ;

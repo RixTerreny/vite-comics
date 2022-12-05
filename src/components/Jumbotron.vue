@@ -3,16 +3,13 @@ export default{}
 </script>
 
 <template>
-<div class="py-5">
-    <div class="container">
-        <h1 class="fs-4 text-white fw-semibold ">--> Content goes here &lt-- </h1>
+    <div>
     </div>
-</div>
 </template>
 
-<style scoped lang="scss">
-@use '../styles/general.scss' as *;
+<style scoped>
 div{
-    background-color: $dark-grey;
+    background-image: url(../assets/jumbotron.jpg);
+    height: 400px;
 }
 </style>
